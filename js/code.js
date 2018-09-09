@@ -310,6 +310,31 @@ function pickSong() {
   document.getElementById("song-art").src = song.getCover();
 }
 
+function getTimeInJapan() {
+  var UTC_TO_JST = 14 * 60 * 60 * 1000;
+  var now = new Date();
+  now.setTime(now.getTime() + UTC_TO_JST);
+  return now;
+}
+
+function getTypeOfDay() {
+  var day = getTimeInJapan().getDay();
+  switch (day) {
+    case 0:
+      return SongTypes.ALL;
+    case 1:
+    case 4:
+      return SongTypes.PRINCESS;
+    case 2:
+    case 5:
+      return SongTypes.FAIRY;
+    case 3:
+    case 6:
+      return SongTypes.ANGEL;
+  }
+  return SongTypes.NONE;
+}
+
 window.onload = function () {
   var resetButton = document.getElementById("reset-button");
   var pickButton = document.getElementById("pick-button");
@@ -319,4 +344,5 @@ window.onload = function () {
   pickButton.onclick = function () {
     pickSong();
   };
+  document.getElementById("type-of-day").innerHTML = "Today is a " + getTypeOfDay() + " day";
 }
