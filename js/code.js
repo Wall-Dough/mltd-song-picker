@@ -6,10 +6,13 @@ var SongTypes = {
   PRINCESS: "Princess"
 };
 
+var PLACEHOLDER_IMG = "img/placeholder.png";
+
 function Song() {
   this.title = "";
   this.romanized = "";
   this.type = SongTypes.NONE;
+  this.cover = null;
 
   this.setTitle = function (title) {
     this.title = title;
@@ -27,6 +30,18 @@ function Song() {
 
   this.getRomanized = function () {
     return this.romanized;
+  };
+
+  this.setCover = function (cover) {
+    this.cover = cover;
+    return this;
+  };
+
+  this.getCover = function () {
+    if (this.cover == null) {
+      return PLACEHOLDER_IMG;
+    }
+    return this.cover;
   };
 
   this.setType = function (type) {
@@ -91,10 +106,12 @@ function buildSongList() {
   var songs = [];
   songs.push(new Song().setTitle("Brand New Theater!")
                         .setRomanized("Brand New Theater!")
-                        .setType(SongTypes.ALL));
+                        .setType(SongTypes.ALL)
+                        .setCover("https://www.project-imas.com/w/images/0/00/Brand_New_Theater%21_Logo.png"));
   songs.push(new Song().setTitle("Thank You!")
                         .setRomanized("Thank You!")
-                        .setType(SongTypes.ALL));
+                        .setType(SongTypes.ALL)
+                        .setCover("https://www.project-imas.com/w/images/d/d0/Thank-You%21_Logo.png"));
   songs.push(new Song().setTitle("Welcome!!")
                         .setRomanized("Welcome!!")
                         .setType(SongTypes.ALL));
@@ -290,6 +307,7 @@ function pickSong() {
   document.getElementById("original-title").innerHTML = song.getTitle();
   document.getElementById("romanized-title").innerHTML = song.getRomanized();
   document.getElementById("type").innerHTML = song.getType();
+  document.getElementById("song-art").src = song.getCover();
 }
 
 window.onload = function () {
