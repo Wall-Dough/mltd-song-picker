@@ -11,6 +11,7 @@ var PLACEHOLDER_IMG = "img/placeholder.png";
 function Song() {
   this.title = "";
   this.romanized = null;
+  this.translated = null;
   this.type = SongTypes.NONE;
   this.cover = null;
 
@@ -30,9 +31,21 @@ function Song() {
 
   this.getRomanized = function () {
     if (this.romanized == null) {
-      return this.title;
+      return this.getTitle();
     }
     return this.romanized;
+  };
+
+  this.setTranslated = function (translated) {
+    this.translated = translated;
+    return this;
+  };
+
+  this.getTranslated = function () {
+    if (this.translated == null) {
+      return this.getRomanized();
+    }
+    return this.translated;
   };
 
   this.setCover = function (cover) {
