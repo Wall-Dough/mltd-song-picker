@@ -10,7 +10,7 @@ var PLACEHOLDER_IMG = "img/placeholder.png";
 
 function Song() {
   this.title = "";
-  this.romanized = "";
+  this.romanized = null;
   this.type = SongTypes.NONE;
   this.cover = null;
 
@@ -29,6 +29,9 @@ function Song() {
   };
 
   this.getRomanized = function () {
+    if (this.romanized == null) {
+      return this.title;
+    }
     return this.romanized;
   };
 
@@ -105,23 +108,18 @@ var filter = {
 function buildSongList() {
   var songs = [];
   songs.push(new Song().setTitle("Brand New Theater!")
-                        .setRomanized("Brand New Theater!")
                         .setType(SongTypes.ALL)
                         .setCover("https://www.project-imas.com/w/images/0/00/Brand_New_Theater%21_Logo.png"));
   songs.push(new Song().setTitle("Thank You!")
-                        .setRomanized("Thank You!")
                         .setType(SongTypes.ALL)
                         .setCover("https://www.project-imas.com/w/images/d/d0/Thank-You%21_Logo.png"));
   songs.push(new Song().setTitle("Welcome!!")
-                        .setRomanized("Welcome!!")
                         .setType(SongTypes.ALL)
                         .setCover("https://www.project-imas.com/w/images/e/e5/Welcome_Logo.png"));
   songs.push(new Song().setTitle("UNION!!")
-                        .setRomanized("UNION!!")
                         .setType(SongTypes.ALL)
                         .setCover("https://www.project-imas.com/w/images/7/7c/Jacket_union1.png"));
   songs.push(new Song().setTitle("THE IDOLM@STER")
-                        .setRomanized("THE IDOLM@STER")
                         .setType(SongTypes.ALL)
                         .setCover("https://www.project-imas.com/w/images/3/3f/TheIdolmastersong-logo.jpg"));
   songs.push(new Song().setTitle("&#x81ea;&#x5206;REST@RT")
@@ -129,7 +127,6 @@ function buildSongList() {
                         .setType(SongTypes.ALL)
                         .setCover("https://www.project-imas.com/w/images/9/9d/Jibun.jpg"));
   songs.push(new Song().setTitle("READY!!")
-                        .setRomanized("READY!!")
                         .setType(SongTypes.ALL)
                         .setCover("https://www.project-imas.com/w/images/1/10/READY%21%21.png"));
   songs.push(new Song().setTitle("&#x5f85;&#x3061;&#x53d7;&#x3051;&#x30d7;&#x30ea;&#x30f3;&#x30b9;")
@@ -137,11 +134,9 @@ function buildSongList() {
                         .setType(SongTypes.ALL)
                         .setCover("https://www.project-imas.com/w/images/8/83/MachiukePrince.jpg"));
   songs.push(new Song().setTitle("ToP!!!!!!!!!!!!!")
-                        .setRomanized("ToP!!!!!!!!!!!!!")
                         .setType(SongTypes.ALL)
                         .setCover("https://www.project-imas.com/w/images/7/75/ToP%21%21%21%21%21%21%21%21%21%21%21%21%21_Logo.png"));
   songs.push(new Song().setTitle("Blooming Star")
-                        .setRomanized("Blooming Star")
                         .setType(SongTypes.ALL)
                         .setType("https://www.project-imas.com/w/images/2/26/Blooming_Star_Logo.png"));
 
@@ -149,13 +144,10 @@ function buildSongList() {
                         .setRomanized("Marionette wa Nemuranai")
                         .setType(SongTypes.ANGEL));
   songs.push(new Song().setTitle("Good-Sleep, Baby&#x2661;")
-                        .setRomanized("Good-Sleep, Baby&#x2661;")
                         .setType(SongTypes.ANGEL));
   songs.push(new Song().setTitle("STANDING ALIVE")
-                        .setRomanized("STANDING ALIVE")
                         .setType(SongTypes.ANGEL));
   songs.push(new Song().setTitle("Angelic Parade&#x266a;")
-                        .setRomanized("Angelic Parade&#x266a;")
                         .setType(SongTypes.ANGEL));
   songs.push(new Song().setTitle("&#x30c9;&#x30ea;&#x30fc;&#x30e0;&#x30c8;&#x30e9;&#x30d9;&#x30e9;&#x30fc;")
                         .setRomanized("Dream Traveler")
@@ -182,10 +174,8 @@ function buildSongList() {
                         .setRomanized("Tokimeki no Onpu ni Natte")
                         .setType(SongTypes.ANGEL));
   songs.push(new Song().setTitle("Happy Darling")
-                        .setRomanized("Happy Darling")
                         .setType(SongTypes.ANGEL));
   songs.push(new Song().setTitle("dear...")
-                        .setRomanized("dear...")
                         .setType(SongTypes.ANGEL));
   songs.push(new Song().setTitle("&#x30cf;&#x30c3;&#x30d4;&#xff5e;&#x20;&#x30a8;&#x30d5;&#x30a7;&#x30af;&#x30c8;&#xff01;")
                         .setRomanized("Happi~ Efekuto!")
@@ -195,13 +185,10 @@ function buildSongList() {
                         .setType(SongTypes.ANGEL));
 
   songs.push(new Song().setTitle("Blue Symphony")
-                        .setRomanized("Blue Symphony")
                         .setType(SongTypes.FAIRY));
   songs.push(new Song().setTitle("Sentimental Venus")
-                        .setRomanized("Sentimental Venus")
                         .setType(SongTypes.FAIRY));
   songs.push(new Song().setTitle("Shooting Stars")
-                        .setRomanized("Shooting Stars")
                         .setType(SongTypes.FAIRY));
   songs.push(new Song().setTitle("FairyTale&#x3058;&#x3083;&#x3044;&#x3089;&#x308c;&#x306a;&#x3044;")
                         .setRomanized("FairyTale ja Irarenai")
@@ -210,19 +197,15 @@ function buildSongList() {
                         .setRomanized("Kuraki Hoshi, Tooi Tsuki")
                         .setType(SongTypes.FAIRY));
   songs.push(new Song().setTitle("Melty Fantasia")
-                        .setRomanized("Melty Fantasia")
                         .setType(SongTypes.FAIRY));
   songs.push(new Song().setTitle("Eternal Harmony")
-                        .setRomanized("Eternal Harmony")
                         .setType(SongTypes.FAIRY));
   songs.push(new Song().setTitle("Precious Grain")
-                        .setRomanized("Precious Grain")
                         .setType(SongTypes.FAIRY));
   songs.push(new Song().setTitle("&#x7460;&#x7483;&#x8272;&#x91d1;&#x9b5a;&#x3068;&#x82b1;&#x83d6;&#x84b2;")
                         .setRomanized("Ruriiro Kingyo to Hanashoubu")
                         .setType(SongTypes.FAIRY));
   songs.push(new Song().setTitle("IMPRESSION&#x2192;LOCOMOTION!")
-                        .setRomanized("IMPRESSION&#x2192;LOCOMOTION!")
                         .setType(SongTypes.FAIRY));
   songs.push(new Song().setTitle("&#x30a2;&#x30d5;&#x30bf;&#x30fc;&#x30b9;&#x30af;&#x30fc;&#x30eb;&#x30d1;&#x30fc;&#x30ea;&#x30fc;&#x30bf;&#x30a4;&#x30e0;&#x20;")
                         .setRomanized("Afutaa Sukuuru Paarii Taimu")
@@ -234,20 +217,16 @@ function buildSongList() {
                         .setRomanized("Yunizon&#x2606;Biito")
                         .setType(SongTypes.FAIRY));
   songs.push(new Song().setTitle("WHY?")
-                        .setRomanized("WHY?")
                         .setType(SongTypes.FAIRY));
 
   songs.push(new Song().setTitle("&#x30b3;&#x30b3;&#x30ed;&#x304c;&#x304b;&#x3048;&#x308b;&#x5834;&#x6240;")
                         .setRomanized("Kokoro ga Kaeru Basho")
                         .setType(SongTypes.PRINCESS));
   songs.push(new Song().setTitle("Growing Storm!")
-                        .setRomanized("Growing Storm!")
                         .setType(SongTypes.PRINCESS));
   songs.push(new Song().setTitle("Princess Be Ambitious!!")
-                        .setRomanized("Princess Be Ambitious!!")
                         .setType(SongTypes.PRINCESS));
   songs.push(new Song().setTitle("HOME, SWEET FRIENDSHIP")
-                        .setRomanized("HOME, SWEET FRIENDSHIP")
                         .setType(SongTypes.PRINCESS));
   songs.push(new Song().setTitle("&#x5408;&#x8a00;&#x8449;&#x306f;&#x30b9;&#x30bf;&#x30fc;&#x30c8;&#x30a2;&#x30c3;&#x30d7;&#xff01;")
                         .setRomanized("Aikotoba wa Sutaato Appu!")
@@ -259,7 +238,6 @@ function buildSongList() {
                         .setRomanized("Jireru Heart ni Hi o Tsukete")
                         .setType(SongTypes.PRINCESS));
   songs.push(new Song().setTitle("Birth of Color")
-                        .setRomanized("Birth of Color")
                         .setType(SongTypes.PRINCESS));
   songs.push(new Song().setTitle("&#x54b2;&#x304f;&#x306f;&#x6d6e;&#x4e16;&#x306e;&#x541b;&#x82b1;&#x706b;")
                         .setRomanized("Saku wa Ukiyo no Kimi Hanabi")
@@ -286,7 +264,6 @@ function buildSongList() {
                         .setRomanized("Kokoro&#x2606;Ekusasaizu")
                         .setType(SongTypes.PRINCESS));
   songs.push(new Song().setTitle("vivid color")
-                        .setRomanized("vivid color")
                         .setType(SongTypes.PRINCESS));
   return songs;
 }
