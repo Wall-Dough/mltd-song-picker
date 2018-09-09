@@ -114,32 +114,40 @@ function buildSongList() {
                         .setCover("https://www.project-imas.com/w/images/d/d0/Thank-You%21_Logo.png"));
   songs.push(new Song().setTitle("Welcome!!")
                         .setRomanized("Welcome!!")
-                        .setType(SongTypes.ALL));
+                        .setType(SongTypes.ALL)
+                        .setCover("https://www.project-imas.com/w/images/e/e5/Welcome_Logo.png"));
   songs.push(new Song().setTitle("UNION!!")
                         .setRomanized("UNION!!")
-                        .setType(SongTypes.ALL));
+                        .setType(SongTypes.ALL)
+                        .setCover("https://www.project-imas.com/w/images/7/7c/Jacket_union1.png"));
   songs.push(new Song().setTitle("THE IDOLM@STER")
                         .setRomanized("THE IDOLM@STER")
-                        .setType(SongTypes.ALL));
+                        .setType(SongTypes.ALL)
+                        .setCover("https://www.project-imas.com/w/images/3/3f/TheIdolmastersong-logo.jpg"));
   songs.push(new Song().setTitle("&#x81ea;&#x5206;REST@RT")
                         .setRomanized("Jibun REST@RT")
-                        .setType(SongTypes.ALL));
+                        .setType(SongTypes.ALL)
+                        .setCover("https://www.project-imas.com/w/images/9/9d/Jibun.jpg"));
   songs.push(new Song().setTitle("READY!!")
                         .setRomanized("READY!!")
-                        .setType(SongTypes.ALL));
+                        .setType(SongTypes.ALL)
+                        .setCover("https://www.project-imas.com/w/images/1/10/READY%21%21.png"));
   songs.push(new Song().setTitle("&#x5f85;&#x3061;&#x53d7;&#x3051;&#x30d7;&#x30ea;&#x30f3;&#x30b9;")
                         .setRomanized("Machiuke Prince")
-                        .setType(SongTypes.ALL));
+                        .setType(SongTypes.ALL)
+                        .setCover("https://www.project-imas.com/w/images/8/83/MachiukePrince.jpg"));
   songs.push(new Song().setTitle("ToP!!!!!!!!!!!!!")
                         .setRomanized("ToP!!!!!!!!!!!!!")
-                        .setType(SongTypes.ALL));
+                        .setType(SongTypes.ALL)
+                        .setCover("https://www.project-imas.com/w/images/7/75/ToP%21%21%21%21%21%21%21%21%21%21%21%21%21_Logo.png"));
   songs.push(new Song().setTitle("Blooming Star")
                         .setRomanized("Blooming Star")
-                        .setType(SongTypes.ALL));
+                        .setType(SongTypes.ALL)
+                        .setType("https://www.project-imas.com/w/images/2/26/Blooming_Star_Logo.png"));
+
   songs.push(new Song().setTitle("Marionette&#x306f;&#x7720;&#x3089;&#x306a;&#x3044;")
                         .setRomanized("Marionette wa Nemuranai")
                         .setType(SongTypes.ANGEL));
-
   songs.push(new Song().setTitle("Good-Sleep, Baby&#x2661;")
                         .setRomanized("Good-Sleep, Baby&#x2661;")
                         .setType(SongTypes.ANGEL));
