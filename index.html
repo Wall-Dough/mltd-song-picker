@@ -5,5 +5,25 @@
   <script src="js/code.js"></script>
 </head>
 <body>
+  <table>
+    <tr>
+      <td>Original Title</td>
+      <td>Romanized Title</td>
+      <td>Type</td>
+    </tr>
+    <tr>
+      <td id="original-title">---</td>
+      <td id="romanized-title">---</td>
+      <td id="type">---</td>
+    </tr>
+  </table>
+  <form id="filters">
+    <input type="checkbox" id="type-all" /> <label for="type-all">All</label><br />
+    <input type="checkbox" id="type-angel" /> <label for="type-angel">Angel</label><br />
+    <input type="checkbox" id="type-fairy" /> <label for="type-fairy">Fairy</label><br />
+    <input type="checkbox" id="type-princess" /> <label for="type-princess">Princess</label><br />
+    <input type="button" id="reset-button" value="Reset filters" /><br />
+    <input type="button" id="pick-button" value="Pick a song" />
+  </form>
 </body>
 </html>
