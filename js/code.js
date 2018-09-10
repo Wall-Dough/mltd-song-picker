@@ -155,129 +155,175 @@ function buildSongList() {
 
   songs.push(new Song().setTitle("Marionette&#x306f;&#x7720;&#x3089;&#x306a;&#x3044;")
                         .setRomanized("Marionette wa Nemuranai")
-                        .setType(SongTypes.ANGEL));
+                        .setType(SongTypes.ANGEL)
+                        .setCover("https://www.project-imas.com/w/images/5/58/Marionette_wa_Nemuranai_Logo.png"));
   songs.push(new Song().setTitle("Good-Sleep, Baby&#x2661;")
-                        .setType(SongTypes.ANGEL));
+                        .setType(SongTypes.ANGEL)
+                        .setCover("https://www.project-imas.com/w/images/0/0d/Good-Sleep%2C_Baby_Logo.png"));
   songs.push(new Song().setTitle("STANDING ALIVE")
-                        .setType(SongTypes.ANGEL));
+                        .setType(SongTypes.ANGEL)
+                        .setCover("https://www.project-imas.com/w/images/6/64/STANDING_ALIVE_Logo.png"));
   songs.push(new Song().setTitle("Angelic Parade&#x266a;")
-                        .setType(SongTypes.ANGEL));
+                        .setType(SongTypes.ANGEL)
+                        .setCover("https://www.project-imas.com/w/images/0/04/Angelic_Parade%E2%99%AA_Logo.jpg"));
   songs.push(new Song().setTitle("&#x30c9;&#x30ea;&#x30fc;&#x30e0;&#x30c8;&#x30e9;&#x30d9;&#x30e9;&#x30fc;")
-                        .setRomanized("Dream Traveler")
-                        .setType(SongTypes.ANGEL));
+                        .setRomanized("Doriimu Toraberaa")
+                        .setType(SongTypes.ANGEL)
+                        .setCover("https://www.project-imas.com/w/images/d/d1/Dream_Traveler_Logo.png"));
   songs.push(new Song().setTitle("&#x8679;&#x8272;letters")
                         .setRomanized("Nijiiro letters")
-                        .setType(SongTypes.ANGEL));
+                        .setType(SongTypes.ANGEL)
+                        .setCover("https://www.project-imas.com/w/images/f/f8/Nijiiro_letters_logo.png"));
   songs.push(new Song().setTitle("&#x661f;&#x5c51;&#x306e;&#x30b7;&#x30f3;&#x30d5;&#x30a9;&#x30cb;&#x30a2;")
                         .setRomanized("Hoshikuzu no Shinfonia")
-                        .setType(SongTypes.ANGEL));
+                        .setType(SongTypes.ANGEL)
+                        .setCover("https://www.project-imas.com/w/images/9/91/Hoshikuzu_no_Symphonia_Logo.png"));
   songs.push(new Song().setTitle("&#x82b1;&#x3056;&#x304b;&#x308a;Weekend&#x273f;")
                         .setRomanized("Hanazakari Weekend&#x273f;")
-                        .setType(SongTypes.ANGEL));
+                        .setType(SongTypes.ANGEL)
+                        .setCover("https://www.project-imas.com/w/images/0/04/Jacket_hzwend.png"));
   songs.push(new Song().setTitle("&#x30b5;&#x30f3;&#x30ea;&#x30ba;&#x30e0;&#x30fb;&#x30aa;&#x30fc;&#x30b1;&#x30b9;&#x30c8;&#x30e9;&#x266a;")
                         .setRomanized("San Rizumu Ookesutora&#x266a;")
-                        .setType(SongTypes.ANGEL));
+                        .setType(SongTypes.ANGEL)
+                        .setCover("https://www.project-imas.com/w/images/8/8a/Sun_Rhythm_Orchestra_Logo.png"));
   songs.push(new Song().setTitle("&#x604b;&#x306e;Lesson&#x521d;&#x7d1a;&#x7de8;")
                         .setRomanized("Koi no Lesson Shokyuuhen")
-                        .setType(SongTypes.ANGEL));
+                        .setType(SongTypes.ANGEL)
+                        .setCover("https://www.project-imas.com/w/images/9/95/Koi_no_Lesson_Shokyuuhen_Logo.jpg"));
   songs.push(new Song().setTitle("&#x30cf;&#x30df;&#x30f3;&#x30b0;&#x30d0;&#x30fc;&#x30c9;")
                         .setRomanized("Hamingubaado")
-                        .setType(SongTypes.ANGEL));
+                        .setType(SongTypes.ANGEL)
+                        .setCover("https://www.project-imas.com/w/images/d/d1/Hummingbird_Logo.png"));
   songs.push(new Song().setTitle("&#x30c8;&#x30ad;&#x30e1;&#x30ad;&#x306e;&#x97f3;&#x7b26;&#x306b;&#x306a;&#x3063;&#x3066;")
                         .setRomanized("Tokimeki no Onpu ni Natte")
-                        .setType(SongTypes.ANGEL));
+                        .setType(SongTypes.ANGEL)
+                        .setCover("https://www.project-imas.com/w/images/7/7a/Tokimeki_no_Onpu_ni_Natte.png"));
   songs.push(new Song().setTitle("Happy Darling")
-                        .setType(SongTypes.ANGEL));
+                        .setType(SongTypes.ANGEL)
+                        .setCover("https://www.project-imas.com/w/images/d/df/Happy_Darling_Logo.png"));
   songs.push(new Song().setTitle("dear...")
-                        .setType(SongTypes.ANGEL));
+                        .setType(SongTypes.ANGEL)
+                        .setCover("https://www.project-imas.com/w/images/9/92/Dear_logo.png"));
   songs.push(new Song().setTitle("&#x30cf;&#x30c3;&#x30d4;&#xff5e;&#x20;&#x30a8;&#x30d5;&#x30a7;&#x30af;&#x30c8;&#xff01;")
                         .setRomanized("Happi~ Efekuto!")
-                        .setType(SongTypes.ANGEL));
+                        .setType(SongTypes.ANGEL)
+                        .setCover("https://www.project-imas.com/w/images/5/52/Jacket_hpyeft.png"));
   songs.push(new Song().setTitle("&#x60f3;&#x3044;&#x306f;Carnaval")
                         .setRomanized("Omoi wa Carnaval")
                         .setType(SongTypes.ANGEL));
 
   songs.push(new Song().setTitle("Blue Symphony")
-                        .setType(SongTypes.FAIRY));
+                        .setType(SongTypes.FAIRY)
+                        .setCover("https://www.project-imas.com/w/images/d/d9/Blue_Symphony_Logo.png"));
   songs.push(new Song().setTitle("Sentimental Venus")
-                        .setType(SongTypes.FAIRY));
+                        .setType(SongTypes.FAIRY)
+                        .setCover("https://www.project-imas.com/w/images/0/06/Sentimental_Venus_Logo.png"));
   songs.push(new Song().setTitle("Shooting Stars")
-                        .setType(SongTypes.FAIRY));
+                        .setType(SongTypes.FAIRY)
+                        .setCover("https://www.project-imas.com/w/images/5/5c/Shooting_Stars_Logo.jpg"));
   songs.push(new Song().setTitle("FairyTale&#x3058;&#x3083;&#x3044;&#x3089;&#x308c;&#x306a;&#x3044;")
                         .setRomanized("FairyTale ja Irarenai")
-                        .setType(SongTypes.FAIRY));
+                        .setType(SongTypes.FAIRY)
+                        .setCover("https://www.project-imas.com/w/images/1/18/FairyTale_ja_Irarenai_Logo.jpg"));
   songs.push(new Song().setTitle("&#x660f;&#x304d;&#x661f;&#x3001;&#x9060;&#x3044;&#x6708;")
                         .setRomanized("Kuraki Hoshi, Tooi Tsuki")
-                        .setType(SongTypes.FAIRY));
+                        .setType(SongTypes.FAIRY)
+                        .setCover("https://www.project-imas.com/w/images/6/6f/Kuraki_Hoshi%2C_Tooi_Tsuki_Logo.png"));
   songs.push(new Song().setTitle("Melty Fantasia")
-                        .setType(SongTypes.FAIRY));
+                        .setType(SongTypes.FAIRY)
+                        .setCover("https://www.project-imas.com/w/images/7/75/Jacket_meltyf.png"));
   songs.push(new Song().setTitle("Eternal Harmony")
-                        .setType(SongTypes.FAIRY));
+                        .setType(SongTypes.FAIRY)
+                        .setCover("https://www.project-imas.com/w/images/1/19/Jacket_ethamo.png"));
   songs.push(new Song().setTitle("Precious Grain")
-                        .setType(SongTypes.FAIRY));
+                        .setType(SongTypes.FAIRY)
+                        .setCover("https://www.project-imas.com/w/images/e/e3/Precious_Grain_Logo.jpg"));
   songs.push(new Song().setTitle("&#x7460;&#x7483;&#x8272;&#x91d1;&#x9b5a;&#x3068;&#x82b1;&#x83d6;&#x84b2;")
                         .setRomanized("Ruriiro Kingyo to Hanashoubu")
-                        .setType(SongTypes.FAIRY));
+                        .setType(SongTypes.FAIRY)
+                        .setCover("https://www.project-imas.com/w/images/0/01/Ruriiro_Kingyo_to_Hanashoubu_Logo.png"));
   songs.push(new Song().setTitle("IMPRESSION&#x2192;LOCOMOTION!")
-                        .setType(SongTypes.FAIRY));
+                        .setType(SongTypes.FAIRY)
+                        .setCover("https://www.project-imas.com/w/images/c/c2/IMPRESSION_LOCOMOTION%21_Logo.png"));
   songs.push(new Song().setTitle("&#x30a2;&#x30d5;&#x30bf;&#x30fc;&#x30b9;&#x30af;&#x30fc;&#x30eb;&#x30d1;&#x30fc;&#x30ea;&#x30fc;&#x30bf;&#x30a4;&#x30e0;&#x20;")
                         .setRomanized("Afutaa Sukuuru Paarii Taimu")
-                        .setType(SongTypes.FAIRY));
+                        .setType(SongTypes.FAIRY)
+                        .setCover("https://www.project-imas.com/w/images/3/3f/After_School_Party_Time_Logo.png"));
   songs.push(new Song().setTitle("&#x30e9;&#x30a4;&#x30a2;&#x30fc;&#x30fb;&#x30eb;&#x30fc;&#x30b8;&#x30e5;")
                         .setRomanized("Raiaa Ruuju")
-                        .setType(SongTypes.FAIRY));
+                        .setType(SongTypes.FAIRY)
+                        .setCover("https://www.project-imas.com/w/images/6/61/Liar_Rouge_Logo.png"));
   songs.push(new Song().setTitle("&#x30e6;&#x30cb;&#x30be;&#x30f3;&#x2606;&#x30d3;&#x30fc;&#x30c8;")
                         .setRomanized("Yunizon&#x2606;Biito")
-                        .setType(SongTypes.FAIRY));
+                        .setType(SongTypes.FAIRY)
+                        .setCover("https://www.project-imas.com/w/images/9/9e/Jacket_unisbt.png"));
   songs.push(new Song().setTitle("WHY?")
-                        .setType(SongTypes.FAIRY));
+                        .setType(SongTypes.FAIRY)
+                        .setCover("https://www.project-imas.com/w/images/7/71/Jacket_why000.png"));
 
   songs.push(new Song().setTitle("&#x30b3;&#x30b3;&#x30ed;&#x304c;&#x304b;&#x3048;&#x308b;&#x5834;&#x6240;")
                         .setRomanized("Kokoro ga Kaeru Basho")
-                        .setType(SongTypes.PRINCESS));
+                        .setType(SongTypes.PRINCESS)
+                        .setCover("https://www.project-imas.com/w/images/b/b1/Kokoro_ga_Kaeru_Basho_Logo.png"));
   songs.push(new Song().setTitle("Growing Storm!")
-                        .setType(SongTypes.PRINCESS));
+                        .setType(SongTypes.PRINCESS)
+                        .setCover("https://www.project-imas.com/w/images/f/fe/Growing_Storm%21_Logo.png"));
   songs.push(new Song().setTitle("Princess Be Ambitious!!")
-                        .setType(SongTypes.PRINCESS));
+                        .setType(SongTypes.PRINCESS)
+                        .setCover("https://www.project-imas.com/w/images/1/1a/Princess_Be_Ambitious%21%21_Logo.png"));
   songs.push(new Song().setTitle("HOME, SWEET FRIENDSHIP")
-                        .setType(SongTypes.PRINCESS));
+                        .setType(SongTypes.PRINCESS)
+                        .setCover("https://www.project-imas.com/w/images/c/c8/HOME%2C_SWEET_FRIENDSHIP_Logo.png"));
   songs.push(new Song().setTitle("&#x5408;&#x8a00;&#x8449;&#x306f;&#x30b9;&#x30bf;&#x30fc;&#x30c8;&#x30a2;&#x30c3;&#x30d7;&#xff01;")
                         .setRomanized("Aikotoba wa Sutaato Appu!")
-                        .setType(SongTypes.PRINCESS));
+                        .setType(SongTypes.PRINCESS)
+                        .setCover("https://www.project-imas.com/w/images/e/e0/Aikotoba_wa_Start_Up%21_Logo.png"));
   songs.push(new Song().setTitle("ZETTAI&#xd7;BREAK!! &#x30c8;&#x30a5;&#x30a4;&#x30f3;&#x30af;&#x30eb;&#x30ea;&#x30ba;&#x30e0;")
                         .setRomanized("ZETTAI×BREAK!! Tuinkuru Rizumu")
-                        .setType(SongTypes.PRINCESS));
+                        .setType(SongTypes.PRINCESS)
+                        .setCover("https://www.project-imas.com/w/images/9/9d/Jacket_zetbre.png"));
   songs.push(new Song().setTitle("&#x30b8;&#x30ec;&#x308b;&#x30cf;&#x30fc;&#x30c8;&#x306b;&#x706b;&#x3092;&#x3064;&#x3051;&#x3066;")
                         .setRomanized("Jireru Heart ni Hi o Tsukete")
-                        .setType(SongTypes.PRINCESS));
+                        .setType(SongTypes.PRINCESS)
+                        .setCover("https://www.project-imas.com/w/images/2/2e/Jacket_jireru.png"));
   songs.push(new Song().setTitle("Birth of Color")
-                        .setType(SongTypes.PRINCESS));
+                        .setType(SongTypes.PRINCESS)
+                        .setCover("https://www.project-imas.com/w/images/c/c6/Jacket_bcolor.png"));
   songs.push(new Song().setTitle("&#x54b2;&#x304f;&#x306f;&#x6d6e;&#x4e16;&#x306e;&#x541b;&#x82b1;&#x706b;")
                         .setRomanized("Saku wa Ukiyo no Kimi Hanabi")
-                        .setType(SongTypes.PRINCESS));
+                        .setType(SongTypes.PRINCESS)
+                        .setCover("https://www.project-imas.com/w/images/a/a0/Jacket_sakuha.png"));
   songs.push(new Song().setTitle("&#x30d3;&#x30c3;&#x30b0;&#x30d0;&#x30f3;&#x30ba;&#x30d0;&#x30ea;&#x30dc;&#x30fc;!!!!!")
                         .setRomanized("Biggu Banzu Bariboo!!!!!")
-                        .setType(SongTypes.PRINCESS));
+                        .setType(SongTypes.PRINCESS)
+                        .setCover("https://www.project-imas.com/w/images/4/4f/Jacket_Big_Bang%27s_Volleyball.png"));
   songs.push(new Song().setTitle("&#x7d20;&#x6575;&#x306a;&#x30ad;&#x30bb;&#x30ad;")
                         .setRomanized("Suteki na Kiseki")
-                        .setType(SongTypes.PRINCESS));
+                        .setType(SongTypes.PRINCESS)
+                        .setCover("https://www.project-imas.com/w/images/c/c8/Suteki_na_Kiseki_Logo.jpg"));
   songs.push(new Song().setTitle("&#x900f;&#x660e;&#x306a;&#x30d7;&#x30ed;&#x30ed;&#x30fc;&#x30b0;")
                         .setRomanized("Toumei na Puroroogu")
-                        .setType(SongTypes.PRINCESS));
+                        .setType(SongTypes.PRINCESS)
+                        .setCover("https://www.project-imas.com/w/images/c/c2/Toumei_na_Prologue_Logo.png"));
   songs.push(new Song().setTitle("&#x30b9;&#x30de;&#x30a4;&#x30eb;&#x3044;&#x3061;&#x3070;&#x3093;")
                         .setRomanized("Sumairu Ichiban")
-                        .setType(SongTypes.PRINCESS));
+                        .setType(SongTypes.PRINCESS)
+                        .setCover("https://www.project-imas.com/w/images/a/a9/Smile_Ichiban_Logo.png"));
   songs.push(new Song().setTitle("&#x30cf;&#x30c3;&#x30d4;&#x30fc;&#x2606;&#x30e9;&#x30c3;&#x30ad;&#x30fc;&#x2606;&#x30b8;&#x30a7;&#x30c3;&#x30c8;&#x30de;&#x30b7;&#x30fc;&#x30f3;")
                         .setRomanized("HAPPII&#x2606;RAKKII&#x2606;JETTOMASHIIN")
-                        .setType(SongTypes.PRINCESS));
+                        .setType(SongTypes.PRINCESS)
+                        .setCover("https://www.project-imas.com/w/images/2/27/Happy_Lucky_Jet_Machine_Logo.jpg"));
   songs.push(new Song().setTitle("&#x30aa;&#x30ea;&#x30b8;&#x30ca;&#x30eb;&#x58f0;&#x306b;&#x306a;&#x3063;&#x3066;")
                         .setRomanized("Orijinaru Goe ni Natte")
-                        .setType(SongTypes.PRINCESS));
+                        .setType(SongTypes.PRINCESS)
+                        .setCover("https://www.project-imas.com/w/images/1/1f/Original_Goe_ni_Natte_Logo.jpg"));
   songs.push(new Song().setTitle("&#x30b3;&#x30b3;&#x30ed;&#x2606;&#x30a8;&#x30af;&#x30b5;&#x30b5;&#x30a4;&#x30ba;")
                         .setRomanized("Kokoro&#x2606;Ekusasaizu")
-                        .setType(SongTypes.PRINCESS));
+                        .setType(SongTypes.PRINCESS)
+                        .setCover("https://www.project-imas.com/w/images/c/c1/Kokoro_Exercise_Logo.png"));
   songs.push(new Song().setTitle("vivid color")
-                        .setType(SongTypes.PRINCESS));
+                        .setType(SongTypes.PRINCESS)
+                        .setCover("https://www.project-imas.com/w/images/3/30/Jacket_vvdclr.png"));
   return songs;
 }
 
@@ -306,6 +352,20 @@ function pickSong() {
   document.getElementById("romanized-title").innerHTML = song.getRomanized();
   document.getElementById("type").innerHTML = song.getType();
   document.getElementById("song-art").src = song.getCover();
+
+  var titleType = document.getElementById("title-type").value;
+  var title = "";
+  switch (titleType) {
+    case "romanized":
+      title = song.getRomanized();
+      break;
+    case "translated":
+      title = song.getTranslated();
+      break;
+    default:
+      title = song.getTitle();
+  }
+  document.getElementById("title").innerHTML = title;
 }
 
 function getTimeInJapan() {
