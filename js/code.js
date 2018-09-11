@@ -153,7 +153,7 @@ function buildSongList() {
                         .setCover("https://www.project-imas.com/w/images/7/75/ToP%21%21%21%21%21%21%21%21%21%21%21%21%21_Logo.png"));
   songs.push(new Song().setTitle("Blooming Star")
                         .setType(SongTypes.ALL)
-                        .setType("https://www.project-imas.com/w/images/2/26/Blooming_Star_Logo.png"));
+                        .setCover("https://www.project-imas.com/w/images/2/26/Blooming_Star_Logo.png"));
 
   songs.push(new Song().setTitle("Marionette&#x306f;&#x7720;&#x3089;&#x306a;&#x3044;")
                         .setRomanized("Marionette wa Nemuranai")
