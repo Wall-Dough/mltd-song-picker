@@ -346,6 +346,7 @@ function buildSongList() {
 }
 
 var songs = buildSongList();
+var currentSong = null;
 
 function applyFilter(songs, filter) {
   if (!filter.hasFilters()) {
@@ -361,29 +362,35 @@ function applyFilter(songs, filter) {
   return filtered;
 }
 
-function pickSong() {
-  filter.update();
-  var filtered = applyFilter(songs, filter);
-  var i = Math.floor(Math.random() * filtered.length);
-  var song = filtered[i];
-  document.getElementById("original-title").innerHTML = song.getTitle();
-  document.getElementById("romanized-title").innerHTML = song.getRomanized();
-  document.getElementById("type").innerHTML = song.getType();
-  document.getElementById("song-art").src = song.getCover();
+function updateInterface() {
+  if (currentSong == null) {
+    return;
+  }
+
+  document.getElementById("type-in-title").innerHTML = currentSong.getType();
+  document.getElementById("song-art").src = currentSong.getCover();
 
   var titleType = document.getElementById("title-type").value;
   var title = "";
   switch (titleType) {
     case "romanized":
-      title = song.getRomanized();
+      title = currentSong.getRomanized();
       break;
     case "translated":
-      title = song.getTranslated();
+      title = currentSong.getTranslated();
       break;
     default:
-      title = song.getTitle();
+      title = currentSong.getTitle();
   }
   document.getElementById("title").innerHTML = title;
+}
+
+function pickSong() {
+  filter.update();
+  var filtered = applyFilter(songs, filter);
+  var i = Math.floor(Math.random() * filtered.length);
+  currentSong = filtered[i];
+  updateInterface();
 }
 
 function getTimeInJapan() {
@@ -412,13 +419,14 @@ function getTypeOfDay() {
 }
 
 window.onload = function () {
-  var resetButton = document.getElementById("reset-button");
-  var pickButton = document.getElementById("pick-button");
-  resetButton.onclick = function () {
+  document.getElementById("reset-button").onclick = function () {
     filter.reset();
   };
-  pickButton.onclick = function () {
+  document.getElementById("pick-button").onclick = function () {
     pickSong();
   };
   document.getElementById("type-of-day").innerHTML = "Today is a " + getTypeOfDay() + " day";
+  document.getElementById("title-type").onchange = function () {
+    updateInterface();
+  };
 }
