@@ -5,36 +5,38 @@
   <script src="js/code.js"></script>
 </head>
 <body>
-  <img id="song-art" src="img/placeholder.png" width="300" height="300" />
-  <div>
-    <h3><span id="title">---</span> [<span id="type-in-title">---</span>]</h3>
-  </div>
-  <div>
-    <p id="type-of-day"></p>
-  </div>
-  <select id="title-type">
-    <option value="original">Original Title</option>
-    <option value="romanized">Romanized Title</option>
-    <option value="translated">Translated Title</option>
-  </select>
-  <form id="filters">
-    <input type="checkbox" id="type-all" /> <label for="type-all">All</label><br />
-    <input type="checkbox" id="type-angel" /> <label for="type-angel">Angel</label><br />
-    <input type="checkbox" id="type-fairy" /> <label for="type-fairy">Fairy</label><br />
-    <input type="checkbox" id="type-princess" /> <label for="type-princess">Princess</label><br />
-    <input type="button" id="reset-button" value="Reset filters" /><br />
-    <input type="button" id="pick-button" value="Pick a song" />
-  </form>
-  <div>
-    <h3>TO DO:</h3>
-    <ul>
-      <li>Songs needing covers:
-        <ul>
-          <li>Omoi wa Carnaval</li>
-        </ul>
-      </li>
-      <li>Add translated titles</li>
-    </ul>
-  </div>
+  <section class="wrapper">
+    <img id="song-art" src="img/placeholder.png" width="300" height="300" />
+    <div>
+      <h3><span id="title">---</span> [<span id="type-in-title">---</span>]</h3>
+    </div>
+    <div>
+      <p id="type-of-day"></p>
+    </div>
+    <select id="title-type">
+      <option value="original">Original Title</option>
+      <option value="romanized">Romanized Title</option>
+      <option value="translated">Translated Title</option>
+    </select>
+    <form id="filters">
+      <input type="checkbox" id="type-all" /> <label for="type-all">All</label><br />
+      <input type="checkbox" id="type-angel" /> <label for="type-angel">Angel</label><br />
+      <input type="checkbox" id="type-fairy" /> <label for="type-fairy">Fairy</label><br />
+      <input type="checkbox" id="type-princess" /> <label for="type-princess">Princess</label><br />
+      <input type="button" id="reset-button" value="Reset filters" /><br />
+      <input type="button" id="pick-button" value="Pick a song" />
+    </form>
+    <div>
+      <h3>TO DO:</h3>
+      <ul>
+        <li>Songs needing covers:
+          <ul>
+            <li>Omoi wa Carnaval</li>
+          </ul>
+        </li>
+        <li>Add translated titles</li>
+      </ul>
+    </div>
+  </section>
 </body>
 </html>
