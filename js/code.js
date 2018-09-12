@@ -342,6 +342,10 @@ function buildSongList() {
   songs.push(new Song().setTitle("vivid color")
                         .setType(SongTypes.PRINCESS)
                         .setCover("https://www.project-imas.com/w/images/3/30/Jacket_vvdclr.png"));
+  songs.push(new Song().setTitle("&#x30c1;&#x30e7;&#x30fc;&#x2191;&#x5143;&#x6c17;Show&#x2606;&#x30a2;&#x30a4;&#x30c9;&#x30eb;ch@ng&#xff01;")
+                        .setRomanized("Choujou Genki Show&#x2606;Aidoru ch@ng!")
+                        .setTranslated("Super Energy Show&#x2606;Idol ch@ng!")
+                        .setType(SongTypes.PRINCESS));
   return songs;
 }
 
