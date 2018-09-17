@@ -220,10 +220,11 @@ function buildSongList() {
                         .setRomanized("Happy~ Effect!")
                         .setType(SongTypes.ANGEL)
                         .setCover("https://www.project-imas.com/w/images/5/52/Jacket_hpyeft.png"));
-  songs.push(new Song().setTitle("&#x60f3;&#x3044;&#x306f;Carnaval")
-                        .setRomanized("Omoi wa Carnaval")
-                        .setTranslated("Feelings Are a Carnaval")
-                        .setType(SongTypes.ANGEL));
+  songs.push(new Song().setTitle("&#x30d5;&#x30a1;&#x30f3;&#x30bf;&#x30b8;&#x30b9;&#x30bf;&#x30fb;&#x30ab;&#x30fc;&#x30cb;&#x30d0;&#x30eb;")
+                        .setRomanized("Fantajisuta Kaanibaru")
+                        .setTranslated("Fantasista Carnival")
+                        .setType(SongTypes.ANGEL)
+                        .setCover("https://www.project-imas.com/w/images/3/35/Jacket_fantac.png"));
 
   songs.push(new Song().setTitle("Blue Symphony")
                         .setType(SongTypes.FAIRY)
@@ -345,7 +346,8 @@ function buildSongList() {
   songs.push(new Song().setTitle("&#x30c1;&#x30e7;&#x30fc;&#x2191;&#x5143;&#x6c17;Show&#x2606;&#x30a2;&#x30a4;&#x30c9;&#x30eb;ch@ng&#xff01;")
                         .setRomanized("Choujou Genki Show&#x2606;Aidoru ch@ng!")
                         .setTranslated("Super Energy Show&#x2606;Idol ch@ng!")
-                        .setType(SongTypes.PRINCESS));
+                        .setType(SongTypes.PRINCESS)
+                        .setCover("https://www.project-imas.com/w/images/0/09/Jacket_chojog.png"));
   return songs;
 }
 
